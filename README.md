@@ -1,2 +1,2 @@
 # AI-Algorithms-website-
-school project, list of AI algorithms used in games
+a school project, website that lists AI algorithms used in games
