@@ -3,7 +3,7 @@ a school project, website that lists AI algorithms used in games
 
 Server: greeceftw.epizy.com
 
-Admin side: 
+Admin side: https://app.infinityfree.net/login
 
   user: epiz_23036130
   
