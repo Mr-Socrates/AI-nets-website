@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ATEITH school project / Artificial intelligence in games</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewbooport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="icon" href="img/favicon.ico"> favicon not ready-->
+    <link rel="stylesheet" href="css/custom-styles.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min"> minified (faster) version-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="login-page">
+    <div class="form">
+        <form class="login-form modal-" >
+            <input id="inputEmail" type="text" placeholder="Your Email"/>
+            <input id="inputPassword" type="password" placeholder="Password"/>
+            <button onclick="CollectData(); LogIn();">Login</button>
+            <p onclick="CollectData(); Create();" class="message">Not registered? <a href="#">Sing Up</a></p>
+        </form>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/login.js"></script>
+</html>
