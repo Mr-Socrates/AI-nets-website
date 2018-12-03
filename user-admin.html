@@ -1,84 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>ATEITH school project / Artificial intelligence in games</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewbooport" content="width=device-width, initial-scale=1">
-
-    <!--<link rel="icon" href="img/favicon.ico"> favicon not ready-->
-    <link rel="stylesheet" href="css/custom-styles.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <!--<link rel="stylesheet" href="css/bootstrap.min"> minified (faster) version-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="js/jquery.min.js"></script>
+    <script>    // Simple include for all sources & meta tags in JS
+        $(function(){ $("head").load("head.html") });
+        $(function(){ $("#header").load("header.html")});
+        $(function(){ $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 <body>
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        /*remove the attribute, and call this function once more:*/
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*exit the function:*/
-                return;
-            }
-        }
-    }
-</script>
-<div w3-include-html="header-footer.html"></div>
+    <div id="header"></div>
 
+    <div class="row col-12 text-center align-items-center h-100">
+        <span class="alert alert-success" role="alert" style="margin:auto;">On success, log in to user administration.</span>
+    </div>
 
-<div class="row col-12 text-center align-items-center h-100">
-    <span class="alert alert-success" role="alert" style="margin:auto;">On success, log in to user administration.</span>
-</div>
+        <!--no CSS yet-->
+    <div class="myAccount col-4">
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/firebase.js"></script>
-<script src="js/login.js"></script>
-<script>includeHTML();</script>
-<script>
-    $('body').on('click', '#loginModal', function(event)
-    {
-        // event.preventDefault();
-        if(!$(event.target).closest('.form').length) {
-            if($('#loginModal').is(":visible")) {
-                console.log("jQuery Click outside of modal");
-                $('#loginModal').hide();
-                $('.modal-backdrop.show').hide();
-            }
-        }
-    });
+        <label>Email Address</label>
+        <input class="form-control" id="email" type="email" placeholder=".my Email address:get from FBase" required="required" data-validation-required-message="">
+        <p class="help-block text-danger"></p>
 
-    $('body').on('click', '.navbar-login', function(event)
-    {
-        if(!$(event.target).closest('.form').length) {
-            if($('#loginModal').is(":hidden")) {
-                console.log("jQuery open modal");
-                $('#loginModal').show();
-                $('.modal-backdrop.show').show();
-            }
-        }
-    });
-</script>
+        <label>My User Name (Optional)</label>
+        <input class="form-control" id="name" type="name" placeholder="...my User name:store to FBase..Maybe not" required="required" data-validation-required-message="">
+        <p class="help-block text-danger"></p>
+
+        <label>My Password</label>
+        <input class="form-control" id="pass" type="password" placeholder=" hidden *****..." required="required" data-validation-required-message="">
+        <p class="help-block text-danger"></p>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">Fav list</h2>
+            <hr class="star-dark mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/game.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/safe.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
 </body>
 </html>
