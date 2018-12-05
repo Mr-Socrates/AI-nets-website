@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><b>AI</b>Games</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-login-singup">
+                <a class="navbar-login" data-toggle="modal" data-target="#loginModal">Log In / Sign Up</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog-centered" id="loginDialogFade">
+            <div class="form">
+                <form class="login-form">
+                    <input id="inputEmail" type="text" placeholder="User Email"/>
+                    <input id="inputPassword" type="password" placeholder="Password"/>
+                    <button onclick="LogIn();">Login</button>
+                    <p class="message">Not registered? <a href="user-admin.html" onclick="Create();">Sing Up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
