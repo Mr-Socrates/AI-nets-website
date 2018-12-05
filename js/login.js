@@ -13,13 +13,36 @@ console.log("Firebase initilised");
 function CollectData() {
     const email = $("#inputEmail").val();
     const password = $("#inputPassword").val();
-    alert("Given email: " + email + "\nGiven password: " + password);
+
+    if(!validateEmail(email)){
+        alert("E-mail address provided is not correct!");
+        return;
+    }else{
+        alert("Given email: " + email + "\nGiven password: " + password);
+    }
+
+    if(!validatePassword(password)){
+        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+        return;
+    }else{
+        alert("Given email: " + email + "\nGiven password: " + password);
+    }
 }
 
 function LogIn() {
     const email = $("#inputEmail").val();
     const password = $("#inputPassword").val();
     alert("Given email: " + email + "\nGiven password: " + password);
+
+    if(!validateEmail(email)){
+        alert("E-mail address provided is not correct!");
+        return;
+    }
+
+    if(!validatePassword(password)){
+        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+        return;
+    }
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
@@ -89,6 +112,16 @@ function Create() {
     // TODO: Validation
     const email = $("#inputEmail").val();
     const password = $("#inputPassword").val();
+
+    if(!validateEmail(email)){
+        alert("E-mail address provided is not correct!");
+        return;
+    }
+    if(!validatePassword(password)){
+        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+        return;
+    }
+
     alert("Given email: " + email + "\nGiven password: " + password);
 
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
@@ -115,7 +148,19 @@ function Create() {
         } else {
             // User is signed out.
             // ...
-            alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
+            alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified
+                + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
         }
     });
+}
+
+function validateEmail(elementValue){
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(elementValue);
+}
+
+function validatePassword(password)
+{
+    var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+    return re.test(password);
 }
