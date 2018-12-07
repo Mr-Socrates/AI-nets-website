@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8902dc4-ef8a-4e79-800b-8bef299ad329" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/head.html" afterDir="false" />
+    <list default="true" id="b8902dc4-ef8a-4e79-800b-8bef299ad329" name="Default" comment="Modal windows are opening even if you close it!! : D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header-footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_freelancer.html" beforeDir="false" afterPath="$PROJECT_DIR$/index_freelancer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/user-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_freelancer.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,28 +16,19 @@
     <favorites_list name="AI-Algorithms-website-" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5380068">
+    <splitter split-orientation="horizontal" split-proportion="0.5177365">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/header.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
-                  <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+                  <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index_freelancer.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/index_freelancer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="260" column="10" selection-start-line="256" selection-start-column="4" selection-end-line="260" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="user-admin.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="user-admin.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/user-admin.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="244">
@@ -67,11 +49,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/footer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="243">
-                  <caret line="45" column="60" lean-forward="true" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+                <state relative-caret-position="-231">
+                  <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -83,8 +65,8 @@
           <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/head.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-115">
-                  <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+                <state>
+                  <caret column="6" selection-start-column="6" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -92,8 +74,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="148" column="14" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="148" selection-end-column="14" />
+                <state relative-caret-position="228">
+                  <caret line="80" column="18" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -113,9 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>auth Ch</find>
-      <find>sign up</find>
-      <find>firebase</find>
       <find>log i</find>
       <find>ja</find>
       <find>cust</find>
@@ -143,6 +122,9 @@
       <find>read</find>
       <find>me is</find>
       <find>my Ema</find>
+      <find>email</find>
+      <find>project</find>
+      <find>subfoo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,14 +146,14 @@
         <option value="$PROJECT_DIR$/login-form.html" />
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/index_freelancer.html" />
-        <option value="$PROJECT_DIR$/head.html" />
         <option value="$PROJECT_DIR$/header-footer.html" />
         <option value="$PROJECT_DIR$/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/css/freelancer.css" />
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/header.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/user-admin.html" />
+        <option value="$PROJECT_DIR$/head.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/footer.html" />
       </list>
     </option>
   </component>
@@ -191,7 +173,7 @@
     <option name="height" value="873" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -207,6 +189,10 @@
               <item name="AI-Algorithms-website-" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AI-Algorithms-website-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -217,6 +203,26 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="AI-Algorithms-website-" type="cbb8eebc:String" user="AI-Algorithms-website-" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="AI-Algorithms-website-" type="cbb8eebc:String" user="AI-Algorithms-website-" />
+              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="AI-Algorithms-website-" type="cbb8eebc:String" user="AI-Algorithms-website-" />
+              <item name="fonts" type="cbb8eebc:String" user="fonts" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="AI-Algorithms-website-" type="cbb8eebc:String" user="AI-Algorithms-website-" />
+              <item name="js" type="cbb8eebc:String" user="js" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="AI-Algorithms-website-" type="cbb8eebc:String" user="AI-Algorithms-website-" />
+              <item name="mail" type="cbb8eebc:String" user="mail" />
             </path>
           </expand>
           <select />
@@ -265,7 +271,7 @@
       <workItem from="1541367894189" duration="3771000" />
       <workItem from="1541501809505" duration="3461000" />
       <workItem from="1542885034071" duration="21610000" />
-      <workItem from="1543412540577" duration="31377000" />
+      <workItem from="1543412540577" duration="35616000" />
     </task>
     <task id="LOCAL-00001" summary="HA! Login functioning with Firebase">
       <created>1542899160034</created>
@@ -295,22 +301,35 @@
       <option name="project" value="LOCAL" />
       <updated>1543767143290</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modal windows are opening even if you close it!! : D">
+      <created>1543858610433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543858610435</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added GitIgnore + Freelancer is v2">
+      <created>1544149477303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1544149477303</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65780000" />
+    <option name="totallyTimeSpent" value="70019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.17833553" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31704095" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31704095" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7430168" visible="true" weight="0.15307583" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -360,7 +379,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HA! Login functioning with Firebase" />
     <MESSAGE value="Modal windows are opening even if you close it!! : D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modal windows are opening even if you close it!! : D" />
+    <MESSAGE value="Added GitIgnore + Freelancer is v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GitIgnore + Freelancer is v2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../HanaBellini.com/contact.php">
@@ -640,31 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="45" column="60" lean-forward="true" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-115">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="148" column="14" lean-forward="true" selection-start-line="81" selection-start-column="3" selection-end-line="148" selection-end-column="14" />
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -675,6 +674,27 @@
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="9" selection-end-line="80" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
