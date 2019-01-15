@@ -293,6 +293,10 @@ input[type="month"] {
   -webkit-appearance: listbox;
 }
 
+input, textarea {
+  background-color : #acbabd !important;
+}
+
 textarea {
   overflow: auto;
   resize: vertical;
@@ -6077,6 +6081,10 @@ button.close {
 .bg-primary {
   background-color: #007bff !important;
 }
+.bg-grey {
+  background-color: #acbabd !important;
+}
+
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
@@ -6351,6 +6359,10 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 768px) {
+  .contact-form {
+    margin: auto !important;
+    display: flex;
+  }
   .d-md-none {
     display: none !important;
   }

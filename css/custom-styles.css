@@ -70,6 +70,13 @@
 }
 .navbar-login {
 }
+
+.about-text {
+    font-family: Lato;
+    font-size: 24px;
+    margin-top: 29px;
+}
+
 li a {
     padding: 10px;
 }

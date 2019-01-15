@@ -84,7 +84,7 @@
     <div id="header"></div>
 
     <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">Games Made By Robots</h2>
             <hr class="star-dark mb-5">
@@ -92,7 +92,6 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>ECE 470</h3>
-                        <a href="#" title="Game Info" data-toggle="popover" data-trigger="hover" data-content="Description of the game">Game info</a>
                     </div>
                     <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -174,21 +173,22 @@
     </section>
 
     <!-- About Section -->
-    <section class="bg-primary text-white mb-0" id="about">
-        <div class="container">
+    <div class = "row">
+    <section class="bg-primary text-white mb-0 col-lg-6"  id="about">
+        <div class="container offset-lg-7 col-lg-5">
             <h2 class="text-center text-uppercase text-white">The Team</h2>
             <hr class="star-light mb-5">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="lead text-center">Panu Rejkonen / FrontEnd :: Styles</p>
+                    <p class="about-text lead text-center">Panu Reijonen / FrontEnd :: Styles</p>
                     <div style="text-align:center">
                     <ul class="list-inline mb-10">
                         <li class="list-inline-item">
                          <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/panu.reijonen">
-                        <i class="fab fa-fw fa-facebook"></i>
+                        <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                         </a>
                             <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/preijo">
-                                <i class="fab fa-fw fa-github"></i>
+                                <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                             </a>
                         </li>
                     </ul>
@@ -197,15 +197,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="lead text-center">Inezka / BackEnd :: JS</p>
+                    <p class="about-text lead text-center">Inez Spiralska / BackEnd :: JS</p>
                     <div style="text-align:center">
                         <ul class="list-inline mb-10">
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/spiralska">
-                                    <i class="fab fa-fw fa-facebook"></i>
+                                    <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                                 </a>
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/">
-                                    <i class="fab fa-fw fa-github"></i>
+                                    <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                                 </a>
                             </li>
                         </ul>
@@ -214,15 +214,15 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="lead text-center">Danderino / The Dude</p>
+                    <p class="about-text lead text-center">Dan Shilvavy / The Dude</p>
                     <div style="text-align:center">
                         <ul class="list-inline mb-10">
                             <li class="list-inline-item">
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/DanIndiaan?ref=br_rs">
-                                    <i class="fab fa-fw fa-facebook"></i>
+                                    <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                                 </a>
                                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/Mr-Socrates">
-                                    <i class="fab fa-fw fa-github"></i>
+                                    <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                                 </a>
                             </li>
                         </ul>
@@ -231,21 +231,21 @@
             </div>
         </div>
     </section>
-
- <!--Contact Us Section-->
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-center text-uppercase text-secondary mb-0">Contact US</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
+        <section class = "bg-grey contact mb-0 col-lg-6">
+        <div class="container offset-lg-0" >
+            <div class="col-lg-5 mx-0">
+                <h2 class="text-center text-uppercase text-secondary mb-0">Contact US</h2>
+                <hr class="star-dark2 mb-5">
+            </div>
+            <div class="container-fluid row col-lg-5 offset-lg-0 mx-5 col-md-7 contact-form" style="display: inline-block">
+                <div>
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
                     <form name="sentMessage" id="contactForm" novalidate="novalidate">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                 <label>Name</label>
-                                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                                <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." style="text-align: left">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -279,7 +279,15 @@
                 </div>
             </div>
         </div>
+
     </section>
+    </div>
+
+
+ <!--Contact Us Section-->
+    <!--<section id="contact">-->
+
+    <!--</section>-->
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top position-fixed ">
@@ -293,6 +301,7 @@
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
         <div class="portfolio-modal-dialog bg-white">
+
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
