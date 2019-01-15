@@ -1,3 +1,9 @@
+<?php
+
+include('registration_email.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <body>
@@ -15,8 +21,8 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog-centered" id="loginDialogFade">
             <div class="form">
-                <form class="login-form">
-                    <input id="inputEmail" type="text" placeholder="User Email"/>
+                <form class="login-form" method="post">
+                    <input id="inputEmail" name="email" type="text" placeholder="User Email"/>
                     <input id="inputPassword" type="password" placeholder="Password"/>
                     <button onclick="LogIn();">Login</button>
                     <p class="message">Not registered? <a href="user-admin.html" onclick="Create();">Sing Up</a></p>

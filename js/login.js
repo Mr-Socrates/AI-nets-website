@@ -73,7 +73,6 @@ function LogIn() {
     });
 }
 
-
 function Create() {
     const email = $("#inputEmail").val();
     const password = $("#inputPassword").val();
