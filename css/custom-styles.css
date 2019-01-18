@@ -77,6 +77,14 @@
     margin-top: 29px;
 }
 
+#my-form input {
+    background-color: white !important;
+}
+.admin input {
+    background-color: white !important;;
+}
+
+
 li a {
     padding: 10px;
 }
