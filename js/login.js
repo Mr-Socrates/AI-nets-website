@@ -99,24 +99,6 @@ function Create() {
         var errorCode = error.code;
         var errorMessage = error.message;
         alert("sign in");
-        jQuery.ajax({
-            type: "POST",
-            url: 'registration_email.php',
-            dataType: 'json',
-            data: {functionname: 'send', arguments: [1,2]},
-
-            success: function (obj, textstatus) {
-                if( !('error' in obj) ) {
-                    yourVariable = obj.result;
-                    alert("sending");
-                }
-                else {
-                    console.log(obj.error);
-                    alert("not sending");
-                }
-            }
-        });
-        window.location.replace("user-admin.html");
     });
 }
 
