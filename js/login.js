@@ -79,11 +79,11 @@ function Create() {
 
     if(!validateEmail(email)){
         alert("E-mail address provided is not correct!");
-        return;
+        // return;
     }
     if(!validatePassword(password)){
         alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-        return;
+        // return;
     }
 
     alert("Given email: " + email + "\nGiven password: " + password);
@@ -95,27 +95,28 @@ function Create() {
         alert("Create: User not created. Code: " + errorCode + "\nError Message: " + errorMessage);
     });
 
-    firebase.auth().onAuthStateChanged(function(user) {
-        alert("AUTH State changed on: " + user.email);
-        if (user) {
-            // User is signed in.
-            const displayName = user.displayName;
-            const email = user.email;
-            const emailVerified = user.emailVerified;
-            const photoURL = user.photoURL;
-            const isAnonymous = user.isAnonymous;
-            const uid = user.uid;
-            const providerData = user.providerData;
-
-            alert("Signed In. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
-            // ...
-        } else {
-            // User is signed out.
-            // ...
-            alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified
-                + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
-        }
-    });
+    // firebase.auth().onAuthStateChanged(function(user) {
+    //     alert("AUTH State changed on: " + user.email);
+    //     if (user) {
+    //         // User is signed in.
+    //         const displayName = user.displayName;
+    //         const email = user.email;
+    //         const emailVerified = user.emailVerified;
+    //         const photoURL = user.photoURL;
+    //         const isAnonymous = user.isAnonymous;
+    //         const uid = user.uid;
+    //         const providerData = user.providerData;
+    //
+    //         alert("Signed In. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
+    //         // ...
+    //     } else {
+    //         // User is signed out.
+    //         // ...
+    //         alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified
+    //             + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
+    //     }
+    // });
+    log.console("fail");
 }
 
 function validateEmail(elementValue){
