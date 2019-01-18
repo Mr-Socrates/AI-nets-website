@@ -110,3 +110,7 @@ fabric.properties
 .idea/sonarlint
 
 # End of https://www.gitignore.io/api/macos,phpstorm
+.idea/AI-Algorithms-website-.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
