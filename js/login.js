@@ -78,7 +78,7 @@ function Create() {
                 type: "POST",
                 url: 'registration_email.php',
                 dataType: 'json',
-                data: {functionname: 'send', arguments: [1]},
+                data: {functionname: 'send', arguments: [1,2]},
 
                 success: function (obj, textstatus) {
                     if( !('error' in obj) ) {
