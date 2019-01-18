@@ -15,11 +15,12 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog-centered" id="loginDialogFade">
             <div class="form">
-                <form class="login-form" method="post">
+                <form class="login-form" method="post" action="mail/registration_email.php">
                     <input id="inputEmail" name="email" type="text" placeholder="User Email"/>
                     <input id="inputPassword" type="password" placeholder="Password"/>
                     <button onclick="LogIn();">Login</button>
-                    <p class="message">Not registered? <a onclick="Create();">Sign Up</a></p>
+
+                    <input type="submit" value="Sign Up" class="message"></input>
                 </form>
             </div>
         </div>

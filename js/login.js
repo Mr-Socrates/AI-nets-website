@@ -69,28 +69,6 @@ function Create() {
             alert("User Created");
         });
 
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            alert("sign in error");
-            jQuery.ajax({
-                type: "POST",
-                url: 'registration_email.php',
-                dataType: 'json',
-                data: {functionname: 'send', arguments: [1,2]},
-
-                success: function (obj, textstatus) {
-                    if( !('error' in obj) ) {
-                        yourVariable = obj.result;
-                    }
-                    else {
-                        console.log(obj.error);
-                    }
-                }
-            });
-            window.location.replace("user-admin.html");
-        });
 
         // firebase.auth().onAuthStateChanged(function(user) {
         //     alert("AUTH State changed on: " + user.email);
@@ -116,6 +94,30 @@ function Create() {
         //     }
         // });
     }
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert("sign in");
+        jQuery.ajax({
+            type: "POST",
+            url: 'registration_email.php',
+            dataType: 'json',
+            data: {functionname: 'send', arguments: [1,2]},
+
+            success: function (obj, textstatus) {
+                if( !('error' in obj) ) {
+                    yourVariable = obj.result;
+                    alert("sending");
+                }
+                else {
+                    console.log(obj.error);
+                    alert("not sending");
+                }
+            }
+        });
+        window.location.replace("user-admin.html");
+    });
 }
 
 function validation(email, password) {
