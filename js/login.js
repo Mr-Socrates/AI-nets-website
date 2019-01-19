@@ -60,7 +60,7 @@ function Create() {
 
     alert("Given email: " + email + "\nGiven password: " + password);
 
-    if (validation(email, password)) {
+    if(validation(email, password)){
         firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
             // Handle Errors here.
             // var errorCode = error.code;
@@ -103,24 +103,23 @@ function Create() {
 }
 
 function validation(email, password) {
-    function validatePassword(password) {
+    function validatePassword(password)
+    {
         var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
         return re.test(password);
     }
-
-    function validateEmail(elementValue) {
+    function validateEmail(elementValue){
         var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         return emailPattern.test(elementValue);
     }
-
-    if (!validateEmail(email)) {
-        alert(email + "E-mail address provided is not correct!");
+    if(!validateEmail(email)){
+        alert(email+"E-mail address provided is not correct!");
         return;
     }
 
-    if (!validatePassword(password)) {
-        alert(password + "Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-
+    if(!validatePassword(password)){
+        alert(password+"Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+        return;
     }
 }
 
