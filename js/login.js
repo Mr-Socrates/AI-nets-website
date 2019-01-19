@@ -1,5 +1,5 @@
 // Initialize Firebase
-const config = {
+var config = {
     apiKey: "AIzaSyCjKRCR3LNpWrPNEQWspJaVAX1O4jUCDtA",
     authDomain: "greeceftw-9932d.firebaseapp.com",
     databaseURL: "https://greeceftw-9932d.firebaseio.com",
@@ -11,39 +11,18 @@ firebase.initializeApp(config);
 console.log("Firebase initilised");
 
 function CollectData() {
-    const email = $("#inputEmail").val();
-    const password = $("#inputPassword").val();
+    var email = $("#inputEmail");
+    var password = $("#inputPassword");
 
-    if(!validateEmail(email)){
-        alert("E-mail address provided is not correct!");
-        return;
-    }else{
-        alert("Given email: " + email + "\nGiven password: " + password);
-    }
-
-    if(!validatePassword(password)){
-        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-        return;
-    }else{
-        alert("Given email: " + email + "\nGiven password: " + password);
-    }
+    validation(email, password);
 }
 
 function LogIn() {
-    // TODO: Validation function
-    const email = $("#inputEmail").val();
-    const password = $("#inputPassword").val();
+    var email = $("#inputEmail").val();
+    var password = $("#inputPassword").val();
     alert("Given email: " + email + "\nGiven password: " + password);
 
-    if(!validateEmail(email)){
-        alert("E-mail address provided is not correct!");
-        return;
-    }
-
-    if(!validatePassword(password)){
-        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-        return;
-    }
+    validation(email, password);
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
@@ -65,67 +44,83 @@ function LogIn() {
             var providerData = user.providerData;
 
             alert(displayName + email + emailVerified + photoURL + isAnonymous + uid + providerData);
-            // ...
+            window.location.href = "/user-admin.html";
+            console.log("log in")
         } else {
             // User is signed out.
-            // ...
+            console.log("log out")
         }
     });
 }
 
-
 function Create() {
-    const email = $("#inputEmail").val();
-    const password = $("#inputPassword").val();
 
-    if(!validateEmail(email)){
-        alert("E-mail address provided is not correct!");
-        return;
-    }
-    if(!validatePassword(password)){
-        alert("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-        return;
-    }
+    var email = $("#inputEmail").val();
+    var password = $("#inputPassword").val();
 
     alert("Given email: " + email + "\nGiven password: " + password);
 
-    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    if (validation(email, password)) {
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+            // Handle Errors here.
+            // var errorCode = error.code;
+            // var errorMessage = error.message;
+            // alert("Create: User not created. Code: " + errorCode + "\nError Message: " + errorMessage);
+            alert("User Created");
+        });
+
+
+        // firebase.auth().onAuthStateChanged(function(user) {
+        //     alert("AUTH State changed on: " + user.email);
+        //     if (user) {
+        //         // User is signed in.
+        //         const displayName = user.displayName;
+        //         const email = user.email;
+        //         const emailVerified = user.emailVerified;
+        //         const photoURL = user.photoURL;
+        //         const isAnonymous = user.isAnonymous;
+        //         const uid = user.uid;
+        //         const providerData = user.providerData;
+        //
+        //         alert("Register and signed In. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
+        //         window.location.href = "/user-admin.html";
+        //         console.log("log in")
+        //     } else {
+        //         // User is signed out.
+        //
+        //         alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified
+        //             + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
+        // log.console("fail");
+        //     }
+        // });
+    }
+    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert("Create: User not created. Code: " + errorCode + "\nError Message: " + errorMessage);
-    });
-
-    firebase.auth().onAuthStateChanged(function(user) {
-        alert("AUTH State changed on: " + user.email);
-        if (user) {
-            // User is signed in.
-            const displayName = user.displayName;
-            const email = user.email;
-            const emailVerified = user.emailVerified;
-            const photoURL = user.photoURL;
-            const isAnonymous = user.isAnonymous;
-            const uid = user.uid;
-            const providerData = user.providerData;
-
-            alert("Signed In. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
-            // ...
-        } else {
-            // User is signed out.
-            // ...
-            alert("Signed OUT. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified
-                + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
-        }
+        alert("sign in");
     });
 }
 
-function validateEmail(elementValue){
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return emailPattern.test(elementValue);
+function validation(email, password) {
+    function validatePassword(password) {
+        var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+        return re.test(password);
+    }
+
+    function validateEmail(elementValue) {
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(elementValue);
+    }
+
+    if (!validateEmail(email)) {
+        alert(email + "E-mail address provided is not correct!");
+        return;
+    }
+
+    if (!validatePassword(password)) {
+        alert(password + "Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+
+    }
 }
 
-function validatePassword(password)
-{
-    var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-    return re.test(password);
-}
