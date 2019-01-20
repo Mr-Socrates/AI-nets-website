@@ -19,11 +19,16 @@
                     <input id="inputEmail" name="email" type="text" placeholder="User Email"/>
                     <input id="inputPassword" type="password" placeholder="Password"/>
                     <button onclick="LogIn();">Login</button>
-                    <input type="submit" value="Sign Up" class="message"></input>
-                    <p class="message">Not registered? <a onclick="Create();">Sing Up</a></p>
+                    <p class="message">Not registered? <a type="submit" id="signUp-btn">Sing Up</a></p>
                 </form>
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById("signUp-btn").onclick = function () {
+            location.href = "mail/registration_email.php";
+            Create();
+        };
+    </script>
 </body>
 </html>
