@@ -3,19 +3,44 @@
 <head>
     <script src="js/jquery.min.js"></script>
     <?php include 'head.php'; ?>
+    <script>
+    firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+    // User is signed in.
+    var displayName = user.displayName;
+    var email = user.email;
+    var emailVerified = user.emailVerified;
+    var photoURL = user.photoURL;
+    var isAnonymous = user.isAnonymous;
+    var uid = user.uid;
+    var providerData = user.providerData;
+
+    $(".admin").prepend(displayName);
+
+    </script>
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php
+include 'header.php';
+if(isset($_GET['email'])){
+    $email = $_GET['email'];
+}
+?>
 
     <div class="row col-12 text-center align-items-center h-100">
         <span class="alert alert-success" role="alert" style="margin:auto;">On success, log in to user administration.</span>
     </div>
 
     <div class="admin">
+        <?php var_dump($email)?>
+
+
     <div class="myAccount col-4">
 
         <label>Email Address</label>
-        <input class="form-control" id="email" type="email" placeholder=".my Email address:get from FBase" required="required" data-validation-required-message="">
+        <input class="form-control" id="email" type="email" required="required" data-validation-required-message=""
+        <?php echo  'value='.$email;?>
+        >
         <p class="help-block text-danger"></p>
 
         <label>My User Name (Optional)</label>
