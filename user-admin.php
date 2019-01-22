@@ -2,7 +2,6 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <script src="js/jquery.min.js"></script>
-    <link href="js/toastr.min.css" rel="stylesheet"/>
     <?php include 'head.php'; ?>
     <script>
     firebase.auth().onAuthStateChanged(function(user) {

@@ -43,5 +43,6 @@
     <script src="js/firebase.js"></script>
     <script src="js/login.js"></script>
     <script> src="js/toastr.min.js"</script>
+    <link href="js/toastr.min.css" rel="stylesheet"/>
 
 </head>
