@@ -23,18 +23,18 @@ $mail->Password = 'B4chelard !';              // SMTP password
 $mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                          // TCP port to connect to
 
-$mail->setFrom('testingphilosopher@gmail.com', 'Greece');
-$mail->addReplyTo('silhavydaniel@gmail.com', 'HA REPLY');
+$mail->setFrom('testingphilosopher@gmail.com', 'AIGames');
+$mail->addReplyTo('testingphilosopher@gmail.com', 'REPLY');
 $mail->addAddress('silhavydan@gmail.com');   // Add a recipient
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 
 $mail->isHTML(true);  // Set email format to HTML
 
-$bodyContent = '<h1>How to Send Email using PHP in Localhost</h1>';
-$bodyContent .= '<p>This is the HTML email sent from localhost using PHP script</p>';
+$bodyContent = '<h1>Would you like to play some fancy games?</h1>';
+$bodyContent .= '<p>Now it is possible, because your account has been activated!</p>';
 
-$mail->Subject = 'TEST mail from Localhost';
+$mail->Subject = 'Your account has been activated. Enjoy the game!';
 $mail->Body = $bodyContent;
 
 
