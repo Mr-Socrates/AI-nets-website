@@ -13,8 +13,8 @@
 
 <h2 id="applicationurl">Application</h2>
 
-<p>is hosted at: https://mr-socrates.github.io/AI-Algorithms-website-/</p>
-<p>administred at: https://console.firebase.google.com/u/0/project/greeceftw-9932d/overview </p>
+<p>is hosted at: http://greeceftw.epizy.com</p>
+<p>administred at: https://console.firebase.google.com/u/0/project/greeceftw-9932d/overview</p>
 
 <hr />
 
