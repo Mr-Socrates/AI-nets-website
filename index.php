@@ -27,15 +27,17 @@
     <link rel="stylesheet" href="css/freelancer.css" type="text/css">
 
     <script src="js/jquery.min.js"></script>
-    <script>    // Simple include for all sources & meta tags in JS
-    // $(function(){ $("head").load("head.html") });
-        $(function(){ $("#header").load("header.html") });
-        $(function(){ $("#footer").load("footer.html") });
-    </script>
+    <!--    <script>    // Simple include for all sources & meta tags in JS-->
+    <!--        $(function(){ $("head").load("head.html") });-->
+    <!--        $(function(){ $("#header").load("header.php") });-->
+    <!--        $(function(){ $("#footer").load("footer.php") });-->
+    <!--    </script>-->
 
 </head>
 <body id="page-top">
-    <div id="header"></div>
+
+<?php include 'header.php'; ?>
+<!--    <div id="header"></div>-->
     <img class="img-fluid d-block mr-2 ml-2 mb-4" src="img/AI-cropped.png" style="width: 100%" alt="hero image">
 
     <!-- List of Games Section -->
@@ -144,10 +146,12 @@
                         <div style="text-align:center">
                         <ul class="list-inline mb-10">
                             <li class="list-inline-item">
-                                <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3" href="https://github.com/preijo">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3"
+                                   href="https://github.com/preijo" target="_blank">
                                     <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                                 </a>
-                                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/panu.reijonen">
+                                <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                                   href="https://www.facebook.com/panu.reijonen" target="_blank">
                                     <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                                 </a>
                             </li>
@@ -161,10 +165,12 @@
                         <div style="text-align:center">
                             <ul class="list-inline mb-10">
                                 <li class="list-inline-item">
-                                    <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3" href="https://github.com/">
+                                    <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3"
+                                       href="https://github.com/" target="_blank">
                                         <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                                     </a>
-                                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/spiralska">
+                                    <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                                       href="https://www.facebook.com/spiralska" target="_blank">
                                         <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                                     </a>
                                 </li>
@@ -178,10 +184,12 @@
                         <div style="text-align:center">
                             <ul class="list-inline mb-10">
                                 <li class="list-inline-item">
-                                    <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3" href="https://github.com/Mr-Socrates">
+                                    <a class="btn btn-outline-light btn-social text-center rounded-circle mr-3"
+                                       href="https://github.com/Mr-Socrates" target="_blank">
                                         <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-github"></i>
                                     </a>
-                                    <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/DanIndiaan?ref=br_rs">
+                                    <a class="btn btn-outline-light btn-social text-center rounded-circle"
+                                       href="https://www.facebook.com/DanIndiaan?ref=br_rs" target="_blank">
                                         <i class="fab fa-fw fa-2x justify-content-center mt-2 fa-facebook"></i>
                                     </a>
                                 </li>
@@ -478,7 +486,7 @@
         </div>
     </div>
 
-<div id="footer"></div>
+<?php include 'footer.php'; ?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -499,31 +507,6 @@
     <script src="js/login.js"></script>
 
     <script>
-        // $(document).ready(function(){
-        //     $('[data-toggle="popover"]').popover();
-        // });
-
-        // FIX for Modal Close and Open
-        $('body').on('click', '#loginModal', function (event) {
-            // event.preventDefault();
-            if (!$(event.target).closest('.form').length) {
-                if ($('#loginModal').is(":visible")) {
-                    console.log("jQuery Close Modal :: Click outside of modal");
-                    $('#loginModal').hide();
-                    $('.modal-backdrop.show').hide();
-                }
-            }
-        });
-        $('body').on('click', '.navbar-login', function (event) {
-            if (!$(event.target).closest('.form').length) {
-                if ($('#loginModal').is(":hidden")) {
-                    console.log("jQuery Open Modal");
-                    $('#loginModal').show();
-                    $('.modal-backdrop.show').show();
-                }
-            }
-        });
-
         // iFrame modals - load after click on button
         $("#btn-ECE").click(function () {
             $(this).css('visibility', 'hidden');
@@ -564,7 +547,7 @@
 
         // Event listener - old
         // $("#btn-In-Vitro").addEventListener('click', function() {
-        //     // document.getElementById("iframe-in-vitro").src="//v6p9d9t4.ssl.hwcdn.net/html/191668/index.html?v=1542783500";
+        //     // document.getElementById("iframe-in-vitro").src="//v6p9d9t4.ssl.hwcdn.net/html/191668/index.php?v=1542783500";
         //     // $this.css('display','none');
         //     alert("aa");
         // }, false);

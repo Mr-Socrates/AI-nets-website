@@ -27,6 +27,26 @@
             <p class="mb-2">2018 <span class="copyleft">&copy;</span> Panu Reijonen, Dan Šilhavý & Inez Sprilaska &nbsp;|&nbsp; <a href="http://www.teithe.gr" target="_blank">A.T.E.I.T.H.</a>
         </div>
     </div>
-
+    <script> // FIX for Modal Close and Open
+        $('body').on('click', '#loginModal', function (event) {
+            // event.preventDefault();
+            if (!$(event.target).closest('.form').length) {
+                if ($('#loginModal').is(":visible")) {
+                    console.log("jQuery Close Modal :: Click outside of modal");
+                    $('#loginModal').hide();
+                    $('.modal-backdrop.show').hide();
+                }
+            }
+        });
+        $('body').on('click', '.navbar-login', function (event) {
+            if (!$(event.target).closest('.form').length) {
+                if ($('#loginModal').is(":hidden")) {
+                    console.log("jQuery Open Modal");
+                    $('#loginModal').show();
+                    $('.modal-backdrop.show').show();
+                }
+            }
+        });
+    </script>
 </body>
 </html>

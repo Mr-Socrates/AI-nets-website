@@ -11,18 +11,16 @@ firebase.initializeApp(config);
 console.log("Firebase initilised");
 
 function CollectData() {
-    var email = $("#inputEmail");
-    var password = $("#inputPassword");
+    var email = $("#inputEmail").val();
+    var password = $("#inputPassword").val();
 
+    alert("Given email: " + email + "\nGiven password: " + password);
     validation(email, password);
 }
 
 function LogIn() {
-    var email = $("#inputEmail").val();
-    var password = $("#inputPassword").val();
-    alert("Given email: " + email + "\nGiven password: " + password);
 
-    validation(email, password);
+    CollectData();
 
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
@@ -43,12 +41,12 @@ function LogIn() {
             var uid = user.uid;
             var providerData = user.providerData;
 
-            alert(displayName + email + emailVerified + photoURL + isAnonymous + uid + providerData);
-            window.location.href = "/user-admin.html";
-            console.log("log in")
+            alert(displayName + "\n\r" + email + "\n\r" + emailVerified + "\n\r" + photoURL + "\n\r" + isAnonymous + "\n\r" + uid + "\n\r" + providerData);
+// window.location.href = "/user-admin.php";
+            console.log("logged in");
         } else {
             // User is signed out.
-            console.log("log out")
+            alert("logged out")
         }
     });
 }
@@ -86,7 +84,7 @@ function Create() {
         //         const providerData = user.providerData;
         //
         //         alert("Register and signed In. Data Collected:\n" + displayName + "\n"+email + "\n"+emailVerified + "\n"+photoURL + "\n"+isAnonymous + "\n"+uid + "\n"+providerData);
-        //         window.location.href = "/user-admin.html";
+    //         window.location.href = "/user-admin.php";
         //         console.log("log in")
         //     } else {
         //         // User is signed out.
@@ -117,12 +115,19 @@ function validation(email, password) {
         return emailPattern.test(elementValue);
     }
     if(!validateEmail(email)){
-        alert(email+"E-mail address provided is not correct!");
-        return;
+        $(".wrong-email").prepend("E-mail address provided is not correct!");
+
+    } else {
+        $(".wrong-email").prepend("E-mail is correct!");
+
     }
 
     if(!validatePassword(password)){
-        alert(password+"Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+        $(".wrong-pass").prepend("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
+
+    } else {
+        $(".wrong-pass").prepend("Password is in correct format.");
+
     }
 }
 
