@@ -54,6 +54,7 @@ Firebase functionss?...
 
 <h2 id="technologies">SA / SD - Structural analysis and design - CASE Tools</h2>
 <p>Google Draw.io</p>
+<a href="https://drive.google.com/drive/folders/1AskvlzZyw1It3XFNKYXUNZxpCpBsjj38?usp=sharing">Sitemap & Wireframes</a>
 
 <h4>Graphics:</h4>
 <p>Inkscape, XNView.</p>
