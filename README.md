@@ -24,9 +24,44 @@
 
 <p>Work documentation is <a href="https://app.asana.com/0/880550799150518/board">here</a>.</p>
 
-
 <hr/>
 
+<h2 id="technologies">Functionaity and technologies used</h2>
+
+1) Websites lists AI games based on genetic algorithms, neural networks or expert systems.
+2) Games are playable on our website
+3) Users can login and register
+
+Features implemented:
+Dynamic website creation through PHP
+jQuery handeling of iframe loading
+Responsive design
+Firebase functionss?...
+
+<h2 id="technologies">Technologies used:</h2>
+
+<ul>
+  <li>PHP 7+</li>
+  <li>JavaScript (ES 2018)</li>
+  <li>Bootstrap</li>
+  <li>Google Firebase</li>
+</ul>
+
+(MySQL (phpMyAdmin))
+
+<h4>Tools used for collaboration and management</h4>
+<p>GitHub & Asana</p>
+
+<h2 id="technologies">SA / SD - Structural analysis and design - CASE Tools</h2>
+<p>Google Draw.io</p>
+
+<h4>Graphics:</h4>
+<p>Inkscape, XNView.</p>
+
+<h4>Website analysis:</h4>
+<p>Validation, Google Speed Test, Security risks</p>
+
+<hr/>
 <p align="center">
     <h6 align="center"> Development of Internet Systems & Applications - 5504</h6>
     <br>
