@@ -28,6 +28,7 @@
 
 <h2 id="technologies">Functionaity and technologies used</h2>
 
++ short description..
 1) Websites lists AI games based on genetic algorithms, neural networks or expert systems.
 2) Games are playable on our website
 3) Users can login and register
@@ -47,20 +48,20 @@ Firebase functionss?...
   <li>Google Firebase</li>
 </ul>
 
-(MySQL (phpMyAdmin))
+(MySQL (phpMyAdmin) / Workbench as CASE tool)
 
 <h4>Tools used for collaboration and management</h4>
 <p>GitHub & Asana</p>
 
-<h2 id="technologies">SA / SD - Structural analysis and design - CASE Tools</h2>
-<p>Google Draw.io</p>
-<a href="https://drive.google.com/drive/folders/1AskvlzZyw1It3XFNKYXUNZxpCpBsjj38?usp=sharing">Sitemap & Wireframes</a>
+<h2 id="technologies">SA / SD Structural analysis and design </h2>
+<h4>CASE Tools:</h4>
+<p>Google Draw.io / <a href="https://drive.google.com/drive/folders/1AskvlzZyw1It3XFNKYXUNZxpCpBsjj38?usp=sharing">Sitemap & Wireframes</a></p>
 
 <h4>Graphics:</h4>
 <p>Inkscape, XNView.</p>
 
 <h4>Website analysis:</h4>
-<p>Validation, Google Speed Test, Security risks</p>
+<p>Validation, Google Speed Test, Security risks, ..</p>
 
 <hr/>
 <p align="center">
