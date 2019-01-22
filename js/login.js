@@ -116,18 +116,10 @@ function validation(email, password) {
     }
     if(!validateEmail(email)){
         $(".wrong-email").prepend("E-mail address provided is not correct!");
-
-    } else {
-        $(".wrong-email").prepend("E-mail is correct!");
-
     }
 
     if(!validatePassword(password)){
         $(".wrong-pass").prepend("Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-
-    } else {
-        $(".wrong-pass").prepend("Password is in correct format.");
-
     }
 }
 

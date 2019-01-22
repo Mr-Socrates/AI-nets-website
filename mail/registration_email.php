@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 if(isset($_POST['email'])){
     $email = $_POST['email'];
-    echo "Your given mail is: " . $email . "\r\n\r\n";
+    //    echo "Your given mail is: " . $email . "\r\n\r\n";
 } else {
     echo "noemail \r\n";
     return;
@@ -42,9 +42,13 @@ if (!$mail->send()) {
     echo 'Message could not be sent.<br>';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo '<br><br>Message has been sent!';
+
+    echo '<script type="text/javascript">
+                alert("Activation email was sent to ' . $email . '");
+        </script>';
 }
 
+header("refresh:1;url=../user-admin.php");
 
 //$message = "Your account is registered";
 //$to=$email;

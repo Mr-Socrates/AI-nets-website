@@ -266,7 +266,7 @@
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-10 mx-auto mb-5">
+                    <div class="col-lg-12 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">ECE 470</h2>
 
                         <button class="btn-info btn-lg" id="btn-ECE" style="position: relative; top: 250px; float: top">
