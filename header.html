@@ -15,15 +15,42 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog-centered" id="loginDialogFade">
             <div class="form">
-                <form class="login-form" method="post" action="mail/registration_email.php">
+                <form class="login-form" method="POST" action="mail/registration_email.php">
                     <input id="inputEmail" name="email" type="text" placeholder="User Email"/>
                     <input id="inputPassword" type="password" placeholder="Password"/>
                     <button onclick="LogIn();">Login</button>
-                    <input type="submit" value="Sign Up" class="message"></input>
-                    <p class="message">Not registered? <a onclick="Create();">Sing Up</a></p>
+                    <span class="d-inline-block message mt-2" style="font-size: 13px; text-transform: none !important;"><p
+                            style="display: inline" class="m-0 p-0">Not registered? </p><button type="submit"
+                                                                                                onclick="Create()"
+                                                                                                class="d-inline btn-link p-0"
+                                                                                                role="link"
+                                                                                                style="text-transform: none !important; width: auto">Sign Up</button>
+                    </span>
+                    <!--<a type="submit" id="signUp-link">Sign Up</a></p>-->
+                    <!--<button type="submit" value="Sign Up">Sign Up</button>-->
                 </form>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $("#signUp-link").click(function () {
+            var email = email;
+            alert("AjaxFires");
+            $.ajax({
+                type: "POST",
+                url: "mail/registration_email.php",
+                data: "email=" + email,
+                success: function () {
+                    //do stuff after the AJAX calls successfully completes
+                    window.location = 'mail/registration_email.php?email=' + email;
+                    Create();
+                },
+                error: function () {
+                    alert("ajax failed");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

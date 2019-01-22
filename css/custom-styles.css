@@ -71,19 +71,20 @@
 .navbar-login {
 }
 
+.login-form input {
+    background-color: #f0f0f0 !important;
+}
 .about-text {
     font-family: Lato;
     font-size: 25px;
     margin-top: 29px;
 }
-
 #my-form input {
     background-color: white !important;
 }
 .admin input {
     background-color: white !important;;
 }
-
 
 li a {
     padding: 10px;

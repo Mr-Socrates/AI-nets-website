@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>ATEITH school project / Artificial intelligence in games</title>
+    <title>Artificial Intelligence in Games</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,73 +25,26 @@
     <!-- C U S T O M CSS -->
     <link rel="stylesheet" href="css/custom-styles.css" type="text/css">
     <link rel="stylesheet" href="css/freelancer.css" type="text/css">
-    <!-- Bootstrap core JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom JS for FREELANCER Template-->
-    <script src="js/freelancer.js"></script>
-
-    <!-- FireBase + Custom Login JS -->
-    <script src="js/firebase.js"></script>
-    <script src="js/login.js"></script>
-
-    <script> // FIX for Modal Close and Open
-    $('body').on('click', '#loginModal', function(event)
-    {
-        // event.preventDefault();
-        if(!$(event.target).closest('.form').length) {
-            if($('#loginModal').is(":visible")) {
-                console.log("jQuery Close Modal :: Click outside of modal");
-                $('#loginModal').hide();
-                $('.modal-backdrop.show').hide();
-            }
-        }
-    });
-
-    $('body').on('click', '.navbar-login', function(event)
-    {
-        if(!$(event.target).closest('.form').length) {
-            if($('#loginModal').is(":hidden")) {
-                console.log("jQuery Open Modal");
-                $('#loginModal').show();
-                $('.modal-backdrop.show').show();
-            }
-        }
-    });
-    </script>
     <script src="js/jquery.min.js"></script>
     <script>    // Simple include for all sources & meta tags in JS
-        $(function(){ $("head").load("head.html") });
+    // $(function(){ $("head").load("head.html") });
         $(function(){ $("#header").load("header.html") });
         $(function(){ $("#footer").load("footer.html") });
     </script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="popover"]').popover();
-        });
-    </script>
+
 </head>
 <body id="page-top">
     <div id="header"></div>
-    <img class="img-fluid d-block mr-2 ml-2 mb-4" src="img/AI-cropped.png" style="width: 100%" alt="lead image">
-    <!--<h1 class="text-uppercase mb-0 position-relative">Start Bootstrap</h1>-->
-    <!--<h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>-->
+    <img class="img-fluid d-block mr-2 ml-2 mb-4" src="img/AI-cropped.png" style="width: 100%" alt="hero image">
 
-    <!-- List of games section -->
+    <!-- List of Games Section -->
     <section class="portfolio mt-0 pt-0">
         <div class="container">
-            <h1 class="text-center text-uppercase text-secondary mb-0">Games Made By Robots</h1>
+            <h2 class="text-center text-uppercase text-secondary mb-0">Games Made By Robots</h2>
             <hr class="game mb-5">
             <div class="row">
+                <!-- Game 1 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>ECE 470</h3>
@@ -102,9 +55,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/ece470.png" alt="">
+                        <img class="img-fluid" src="img/ece470.png" alt="Game Image of ECE 470">
                     </a>
                 </div>
+                <!-- Game 2 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>Evolution</h3>
@@ -115,9 +69,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/evolution2.png" alt="">
+                        <img class="img-fluid" src="img/evolution2.png" alt="Game Image of Evolution">
                     </a>
                 </div>
+                <!-- Game 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>Evolution Sandbox</h3></div>
@@ -127,9 +82,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/sandbox.png" alt="">
+                        <img class="img-fluid" src="img/sandbox.png" alt="Game Image of Evolution Sandbox">
                     </a>
                 </div>
+                <!-- Game 4 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>Compact Genetics</h3>
@@ -140,9 +96,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/compact.png" alt="">
+                        <img class="img-fluid" src="img/compact.png" alt="Game Image of Compact Genetics">
                     </a>
                 </div>
+                <!-- Game 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>Smart Fire-Flies</h3>
@@ -153,10 +110,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/fireflies.png" alt="">
+                        <img class="img-fluid" src="img/fireflies.png" alt="Game Image of Smart Fire-Flies">
                     </a>
                 </div>
-
+                <!-- Game 6 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="game title">
                         <h3>In Vitro 2</h3>
@@ -167,7 +124,7 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="img/invitro.png" alt="">
+                        <img class="img-fluid" src="img/invitro.png" alt="Game Image of In Vitro 2">
                     </a>
                 </div>
             </div>
@@ -175,7 +132,7 @@
 
     </section>
 
-    <!-- About Section -->
+    <!-- About Us Section -->
     <div class = "row">
         <section class="bg-primary text-white mb-0 col-lg-6" id="about">
             <div class="container offset-lg-5 col-lg-7">
@@ -217,7 +174,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p class="about-text lead text-center">Dan Šilhavý / Dev Ops</p>
+                        <p class="about-text lead text-center">Dan Šilhavý / Team leader</p>
                         <div style="text-align:center">
                             <ul class="list-inline mb-10">
                                 <li class="list-inline-item">
@@ -283,11 +240,6 @@
             </div>
         </section>
     </div>
-
-
- <!--Contact Us Section-->
-    <!--<section id="contact">-->
-
     <!--</section>-->
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -297,165 +249,229 @@
         </a>
     </div>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal" id="portfolio-modal-1">
+    <!-- Game Modals -->
+    <!-- Game Modal 1 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
         <div class="portfolio-modal-dialog bg-white">
-
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">ECE 470</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+
+                        <button class="btn-info btn-lg" id="btn-ECE" style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-ECE"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8; background: #e8e8e8">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled">
                             <li><b>Game Information: </b>Incremental genetic algorithm game</li>
                             <li><b>Author: </b>Triben</li>
                             <li><b>Genre: </b>Educational</li>
-                            <a href="https://triben.itch.io/ece-470">Gamepage</a>
+                            <a href="https://triben.itch.io/ece-470" target="_blank">Gamepage</a>
                         </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal" id="portfolio-modal-2">
+    <!-- Game Modal 2 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
         <div class="portfolio-modal-dialog bg-white">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">Evolution</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+
+                        <button class="btn-info btn-lg" id="btn-Evo" style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-Evo"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8; background: #e8e8e8">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled">
                             <li><b>Game Information: </b>Create creatures and let them evolve to see how they master various tasks</li>
                             <li><b>Author: </b>Keiwan</li>
                             <li><b>Genre: </b>Simulation</li>
-                            <a href="https://keiwan.itch.io/evolution">Gamepage</a>
+                            <a href="https://keiwan.itch.io/evolution" target="_blank">Gamepage</a>
                          </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal" id="portfolio-modal-3">
+    <!-- Game Modal 3 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
         <div class="portfolio-modal-dialog bg-white">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">Evolution Sandbox</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+
+                        <button class="btn-info btn-lg" id="btn-EvoSand"
+                                style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-EvoSand"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8; background: #e8e8e8">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled">
                             <li><b>Game Information: </b>Game about genetic evolution of simple creatures</li>
                             <li><b>Author: </b>David Birgé-Cotte</li>
                             <li><b>Genre: </b>Simulation</li>
-                            <a href="https://david-birge-cotte.itch.io/evolution-sandbox">Gamepage</a>
+                            <a href="https://david-birge-cotte.itch.io/evolution-sandbox" target="_blank">Gamepage</a>
                         </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal" id="portfolio-modal-4">
+    <!-- Game Modal 4 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
         <div class="portfolio-modal-dialog bg-white">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">Compact Genetics</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+
+                        <button class="btn-info btn-lg" id="btn-CGenetics"
+                                style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-CGenetics"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8; background: #e8e8e8">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled">
                             <li><b>Game Information: </b>Genetic algorithm spaceship fight toy game</li>
                             <li><b>Author: </b>AndyMakes</li>
                             <li><b>Genre: </b> Simulation</li>
-                            <a href="https://andymakes.itch.io/combat-genetics">Gamepage</a>
+                            <a href="https://andymakes.itch.io/combat-genetics" target="_blank">Gamepage</a>
                         </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal" id="portfolio-modal-5">
+    <!-- Game Modal 5 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
         <div class="portfolio-modal-dialog bg-white">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-10 mx-auto mb-5">
                         <h2 class="text-secondary text-uppercase mb-0">Smart Fire-Flies</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+
+                        <button class="btn-info btn-lg" id="btn-SFF" style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-SFF"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8; background: #e8e8e8">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled">
                             <li><b>Game Information: </b>Genetic algorithm game</li>
                             <li><b>Author: </b>Shreerang Vaidya</li>
                             <li><b>Genre: </b>Simulation</li>
-                            <a href="https://smvaidya.itch.io/smart-fire-flies">Gamepage</a>
+                            <a href="https://smvaidya.itch.io/smart-fire-flies" target="_blank">Gamepage</a>
                         </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal" id="portfolio-modal-6">
-        <div class="portfolio-modal-dialog bg-white">
+    <!-- Game Modal 6 -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+        <div class="portfolio-modal-dialog bg-white h-100">
             <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
                 <i class="fa fa-3x fa-times"></i>
             </a>
             <div class="container text-center">
                 <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">In Vitro 2</h2>
-                        <hr class="star-dark mb-5">
-                        <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-                        <ul class="mb-5 text-left list-unstyled">
+                    <div class="col-lg-10 mx-auto mb-5">
+                        <h2 class="text-secondary text-uppercase mb-0" id="heading-in-vitro">In Vitro 2</h2>
+                        <!--<hr class="game mb-5">-->
+                        <button class="btn-info btn-lg" id="btn-In-Vitro"
+                                style="position: relative; top: 250px; float: top">
+                            Run the game
+                        </button>
+                        <iframe name="Iframe In Vitro 2" id="iframe-in-vitro"
+                                mozallowfullscreen="true"
+                                allow="fullscreen; geolocation; microphone; camera; midi"
+                                msallowfullscreen="true"
+                                scrolling="yes"
+                                allowfullscreen="true" webkitallowfullscreen="true"
+                                allowtransparency="true"
+                                class="mb-4" width="100%" height="122%"
+                                style="z-index: 100 !important; border:1px solid #e8e8e8;">
+                        </iframe>
+
+                        <ul class="mb-2 text-left list-unstyled mb-auto">
                             <li><b>Game Information: </b>Simple genetic algorithm game</li>
                             <li><b>Authors: </b>David Birgé-Cotte, Rémi Leblanc</li>
                             <li><b>Genre: </b>Simulation</li>
-                            <a href="https://david-birge-cotte.itch.io/in-vitro-2">Gamepage</a>
+                            <a href="https://david-birge-cotte.itch.io/in-vitro-2" target="_blank">Gamepage</a>
                         </ul>
-                        <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                            <i class="fa fa-close"></i>
-                            Close Game</a>
+                        <!--<a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss">-->
+                        <!--<i class="fa fa-close"></i>-->
+                        <!--Close Game</a>-->
                     </div>
                 </div>
             </div>
@@ -464,6 +480,94 @@
 
 <div id="footer"></div>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
+    <!-- Modals JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom JS for FREELANCER Template-->
+    <script src="js/freelancer.js"></script>
+
+    <!-- FireBase + Custom Login JS -->
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $('[data-toggle="popover"]').popover();
+        // });
+
+        // FIX for Modal Close and Open
+        $('body').on('click', '#loginModal', function (event) {
+            // event.preventDefault();
+            if (!$(event.target).closest('.form').length) {
+                if ($('#loginModal').is(":visible")) {
+                    console.log("jQuery Close Modal :: Click outside of modal");
+                    $('#loginModal').hide();
+                    $('.modal-backdrop.show').hide();
+                }
+            }
+        });
+        $('body').on('click', '.navbar-login', function (event) {
+            if (!$(event.target).closest('.form').length) {
+                if ($('#loginModal').is(":hidden")) {
+                    console.log("jQuery Open Modal");
+                    $('#loginModal').show();
+                    $('.modal-backdrop.show').show();
+                }
+            }
+        });
+
+        // iFrame modals - load after click on button
+        $("#btn-ECE").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-ECE")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/990736/WebGL/index.html?v=1542800984";
+        });
+
+        $("#btn-Evo").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-Evo")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/438808-80463/Evolution/index.html?v=1542780886";
+        });
+
+        $("#btn-EvoSand").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-EvoSand")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/579016/index.html?v=1542782233";
+        });
+
+        $("#btn-CGenetics").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-CGenetics")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/299443/itch_version/index.html?v=1542784491";
+        });
+
+        $("#btn-SFF").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-SFF")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/864452/SmartFlies/index.html?v=1542801137";
+        });
+
+        $("#btn-In-Vitro").click(function () {
+            $(this).css('visibility', 'hidden');
+            document.getElementById("iframe-in-vitro")
+                .src = "//v6p9d9t4.ssl.hwcdn.net/html/191668/index.html?v=1542783500";
+            // $("#heading-in-vitro").fadeOut(10000);
+        });
+
+        // Event listener - old
+        // $("#btn-In-Vitro").addEventListener('click', function() {
+        //     // document.getElementById("iframe-in-vitro").src="//v6p9d9t4.ssl.hwcdn.net/html/191668/index.html?v=1542783500";
+        //     // $this.css('display','none');
+        //     alert("aa");
+        // }, false);
+    </script>
 </body>
 </html>

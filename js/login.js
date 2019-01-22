@@ -67,8 +67,11 @@ function Create() {
             // var errorMessage = error.message;
             // alert("Create: User not created. Code: " + errorCode + "\nError Message: " + errorMessage);
             alert("User Created");
-        });
-
+        })
+    }
+    else {
+        alert("User is registered or was created and signed in");
+    }
 
         // firebase.auth().onAuthStateChanged(function(user) {
         //     alert("AUTH State changed on: " + user.email);
@@ -93,13 +96,14 @@ function Create() {
         // log.console("fail");
         //     }
         // });
-    }
+
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
-        alert("sign in");
+        // alert("Error signing in");
     });
+    // alert("no validation? or no catch error?");
 }
 
 function validation(email, password) {
@@ -119,7 +123,6 @@ function validation(email, password) {
 
     if(!validatePassword(password)){
         alert(password+"Password format is not correct! \nUse one at least one number, one lowercase, one uppercase letter and at least six characters");
-        return;
     }
 }
 
