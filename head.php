@@ -42,5 +42,6 @@
     <!-- FireBase + Custom Login JS -->
     <script src="js/firebase.js"></script>
     <script src="js/login.js"></script>
-    
+    <script> src="js/toastr.min.js"</script>
+
 </head>

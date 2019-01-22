@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <script src="js/jquery.min.js"></script>
+    <link href="js/toastr.min.css" rel="stylesheet"/>
     <?php include 'head.php'; ?>
     <script>
     firebase.auth().onAuthStateChanged(function(user) {
@@ -28,11 +29,35 @@ if(isset($_GET['email'])){
 ?>
 
     <div class="row col-12 text-center align-items-center h-100">
-        <span class="alert alert-success" role="alert" style="margin:auto;">On success, log in to user administration.</span>
+        <script src="js/toastr.min.js">
+            function toasterOptions() {
+                toastr.options = {
+                    "closeButton": false,
+                    "debug": false,
+                    "newestOnTop": false,
+                    "progressBar": false,
+                    "positionClass": "toast-top-right",
+                    "preventDuplicates": false,
+                    "onclick": null,
+                    "showDuration": "300",
+                    "hideDuration": "1000",
+                    "timeOut": "5000",
+                    "extendedTimeOut": "1000",
+                    "showEasing": "swing",
+                    "hideEasing": "linear",
+                    "showMethod": "fadeIn",
+                    "hideMethod": "fadeOut"
+                };
+            };
+            toasterOptions();
+            toastr.success("On success, log in to user administration.");
+
+        </script>
+        <!--<span class="alert alert-success" role="alert" style="margin:auto;">On success, log in to user administration.</span> -->
     </div>
 
     <div class="admin">
-        <?php var_dump($email)?>
+        <!--  <?php var_dump($email)?> -->
 
 
     <div class="myAccount col-4">
