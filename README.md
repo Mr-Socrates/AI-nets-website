@@ -28,13 +28,12 @@
 
 <h2 id="technologies">Functionaity and technologies used</h2>
 
-short description..
 <ul>
- <li>Website AIGames lists the most popular games based on genetic algorithms, neural networks or expert systems.</li>
- <li>Users can register to the AIGames and play all of the available games.</li>
- <li>After login to the system User can see the list of favourite AIGames, check self email and password or search for a good game to upgrade ones skills!</li>
+ <li>Website AIGames lists the most popular simulation games based on genetic algorithms, neural networks or expert systems.</li>
+ <li>Users can register to AIGames and play all of the available games on our website.</li>
+ <li>After login to the system User can see check news about AI that we consider important, check your email and password.</li>
  <li>The AIGames system gives an opportunity to see the developers team members, check their personal information on facebook or job experience through github links and last but not least to contact them for example in order to join the team and develop even more briliant functions!</li>
- <li>There is also a possibility to see the Course details online or information about the Department of Informatics. You can also acces the project documemtation of work easy. </li>
+ <li>There is also the possibility to see the Course details online or information about the Department of Informatics. You can also acces the project documemtation of work easy. </li>
 </ul>
 
 Features implemented:
